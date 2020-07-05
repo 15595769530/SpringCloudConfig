@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: cld-user-com.kkb.service
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/kkb?serverTimezone=Asia/Shanghai
+    username: root
+    password: 12345aaa
+server:
+  port: 9000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8080/eureka,http:127.0.0.1:8081/eureka,http://127.0.0.1:8082/eureka
+
+myname: "哈哈大笑卧槽9000"

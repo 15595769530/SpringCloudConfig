@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: cld-user-com.kkb.client
+server:
+  port: 9100
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8080/eureka
+
+cld-customer-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+
+feign:
+  hystrix:
+    enabled: true
